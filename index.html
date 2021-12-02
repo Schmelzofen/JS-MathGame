@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <form action="" onsubmit="return false">
+        <section>
+          <h1>In how many rounds you think you can guess the number?</h1>
+          <div id="tries">
+            <input type="radio" name="game" id="vier" />
+            <label for="">4</label>
+            <input type="radio" name="game" id="funf" />
+            <label for="">5</label>
+            <input type="radio" name="game" id="sechs" />
+            <label for="">6</label>
+            <input type="radio" name="game" id="custom" />
+            <label for="">custom</label>
+          </div>
+        </section>
+        <section>
+          <input type="number" min="0" max="100" name="" id="inputNumber" />
+          <input
+            type="button"
+            value="guess"
+            id="button"
+            onclick="mathGame1()"
+          />
+        </section>
+      </form>
+      <ol></ol>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
